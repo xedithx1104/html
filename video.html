@@ -47,7 +47,7 @@
     playlistId: pid,
     key: apiKey},
     function (data) {
-     document.getElementById("VideoThumbs").innerHTML += '<div class="progress"><div class="indeterminate";></div></div>';
+     document.getElementById("VideoThumbs").innerHTML += '<div class="indeterminate";></div>';
      // 傳回值參見 https://developers.google.com/youtube/v3/docs/playlistItems#resource-representation
      $.each(data.items, function (i, item) {
       var str = '<div style="float:left;font-size:small;margin:5px;">';
